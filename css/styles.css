@@ -51,11 +51,7 @@ p {
 }
 
 .navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
   height: 150px;
-  overflow: hidden;
 }
 
 .nav-item {
@@ -63,7 +59,7 @@ p {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Montserrat-Light";
   
   
@@ -97,27 +93,20 @@ p {
 }
 
 /* Title Image */
-.img-r {
-  background-image: url("../images/fon2.jpg") ;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  
-  background-position-x: 100%;
-}
+
 .title-image {
-  width: 85%;
-  transform: rotate(20deg);
-  position: absolute;
-  right: 5%;
+  width: 95%;
+  transform: rotate(0deg);
+  position: relative;
+  right: 0%;
+
+
+  
 }
 
+
 /* Features Section */
-.img-l {
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-image: url("../images/grey.png") ;
-  background-position-y: 90%;
-}
+
 
 #features {
   position: relative;
@@ -138,10 +127,10 @@ p {
 }
 @keyframes my-animation {
   from {    
-    top: 10px;
+    top: 0px;
   }
   to {
-    top: 0px;
+    top: 10px;
   }
 }
 
@@ -189,57 +178,46 @@ p {
   
 }
 
-.photo:hover{
-  animation: crescendo 1.5s alternate ease-in;
+@keyframes crescendo {
+  0%   {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
 
+.photo:hover{
+  animation: crescendo 0.5s alternate ease-in;
   animation-fill-mode: forwards;
   
 }
-@keyframes crescendo {
-  0%   {transform: scale(.8);}
-  100% {transform: scale(1.2);}
-}
+
 .photo {
   width: 100%;
   height: 75%;
   border-radius: 100%;
   margin: 10%;
 }
-.portfolio-img-l {
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-image: url("../images/probnik1.jpg") ;
-  background-position-y: 100%;
-}
 
-.portfolio-img-r {
-  background-repeat: no-repeat;
-  background-size: 7%;
-  background-image: url("../images/pir.jpg");
-  background-position-x: 80%;
-  background-position-y: 100%;
-  
-}
+
 /* Pricing Section */
 
 #pricing {
   padding: 100px;
 
 }
-.pricing-img{
-  background-image: url("../images/grey.png") ;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-position-x: 100%;
-  background-position-y: 3%;
-}
 
-  .section-heading i {
+.section-heading i {
   color:#871717
 }
-#pricing i:hover {
-  color:#fff
+
+
+.pricing-icon{
+  color:rgb(127, 159, 255);
 }
+
+
+#pricing .card-body p{
+  text-align: left;
+}
+
 
 .price-text {
   font-size: 3rem;
@@ -263,13 +241,7 @@ p {
 }
 
 /* Footer Section */
-.i-bg {
-  background-image: url("../images/probnik4.jpg") ;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-position-x: 100%;
-  background-position-y: 3%;
-}
+
 
 .social-icon {
   margin: 20px 10px;
